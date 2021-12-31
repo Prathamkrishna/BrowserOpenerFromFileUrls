@@ -1,4 +1,4 @@
-package com.company;
+package com.app;
 
 import java.io.IOException;
 import java.util.List;

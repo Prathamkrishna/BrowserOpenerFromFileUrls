@@ -1,4 +1,4 @@
-package com.company;
+package com.app;
 
 import java.awt.*;
 import java.io.IOException;
