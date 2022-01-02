@@ -1,4 +1,4 @@
-package com.app;
+package com.app.Browser;
 
 import java.awt.*;
 import java.io.IOException;

@@ -1,10 +1,11 @@
-package com.app;
+package com.app.File;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class FileUrisImpl implements FileUris{
     private final Pattern patternStart = Pattern.compile("www.");
@@ -28,5 +29,10 @@ public class FileUrisImpl implements FileUris{
             }
         }
         return list;
+    }
+
+    @Override
+    public List<String> fileUrisWithSpecificTerm(List<String> fileUrls, String term) {
+        return fileUrls.stream().filter(term1 -> term1.contains(term)).collect(Collectors.toList());
     }
 }
